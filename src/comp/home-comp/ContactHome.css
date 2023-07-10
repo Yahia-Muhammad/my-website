@@ -1,0 +1,19 @@
+.contact-me {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.inside-contact-me {
+  width: var(--mainWidth);
+  margin: var(--mainMargin);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .inside-contact-me {
+    width: 50%;
+  }
+}

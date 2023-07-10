@@ -1,0 +1,76 @@
+.inside-my-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inside-my-project>div {
+  width: 32%;
+  overflow: hidden;
+}
+
+.inside-my-project img {
+  width: 100%;
+}
+
+.box-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  overflow: hidden;
+}
+
+.box-projects>div {
+  width: 32%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.box-projects>div>div {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 100%;
+  height: 95%;
+  background-color: #000c;
+  opacity: 0;
+  transition: opacity .4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-projects>div>div:hover{
+  opacity: 1;
+}
+
+.box-projects>div>div a {
+  transform: translate(20px, 15px);
+  margin-bottom: 20px;
+}
+
+.box-projects img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 769px) {
+  .box-projects>div {
+    width: 49%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .box-projects>div {
+    width: 100%;
+  }
+}
+
+
+

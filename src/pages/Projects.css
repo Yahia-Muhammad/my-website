@@ -1,0 +1,44 @@
+main.projects-page {
+  height: 75vh;
+}
+
+.container-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: var(--mainWidth);
+  margin: var(--mainMargin);
+  padding-top: 50px;
+}
+
+.container-img .box {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-img .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-img .box .dream img {
+  width: 100%;
+  padding-bottom: 20px;
+  /* border-radius: 5px; */
+}
+
+
+@media only screen and (min-width: 769px) {
+  .container-img .box {
+    flex-direction: row;
+  }
+
+  .container-img .box .dream {
+    width: 32%;
+  }
+}

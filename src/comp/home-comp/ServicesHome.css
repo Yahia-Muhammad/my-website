@@ -1,0 +1,120 @@
+/* ===============================
+==========Services Global==========
+=============================== */
+.my-services {
+  overflow: hidden;
+}
+
+/* ===============================
+==========Services desktop==========
+=============================== */
+
+.my-services div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.my-services div section {
+  padding: 35px 20px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* ===============================
+==========Services Mobile==========
+=============================== */
+
+.services-mobile {
+  position: relative;
+}
+
+.services-mobile .slider-inner {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left 1s;
+}
+
+.services-mobile .slider-inner section {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: scale 1s;
+}
+
+.endScal {
+  scale: 1;
+}
+
+.startScal {
+  scale: .8 !important;
+}
+
+.icon-arrow {
+  position: absolute;
+  left: 5%;
+  top: 100%;
+  transform: translate(0px, -100%);
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+
+
+
+/* ===============================
+==========Toggle Media Query Services==========
+=============================== */
+.my-services .services-desktop {
+  display: none;
+}
+
+.my-services .services-mobile {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+
+
+@media (min-width: 480px) {
+  .my-services .services-desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .my-services .services-mobile {
+    display: none;
+  }
+
+  .my-services div {
+    flex-wrap: nowrap;
+  }
+
+  .my-services div section {
+    width: 49%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-services .services-desktop {
+    flex-wrap: nowrap;
+  }
+
+  .my-services div section {
+    width: 24%;
+  }
+}

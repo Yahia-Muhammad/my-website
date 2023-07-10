@@ -1,0 +1,98 @@
+.inside-about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.about-me .inside-about-me>div {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.about-me .inside-about-me div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me .inside-about-me .container-img-home {
+  width: 85%;
+  position: relative;
+}
+
+.about-me .inside-about-me .container-img-home::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -23px;
+  width: 20%;
+  height: 40%;
+  border-top: 2px solid var(--mainColor);
+  border-left: 2px solid var(--mainColor);
+}
+
+.about-me .inside-about-me .container-img-home::after {
+  content: "";
+  position: absolute;
+  right: -17px;
+  bottom: -15px;
+  width: 70%;
+  height: 80%;
+  background-color: var(--mainColor);
+  z-index: -1;
+}
+
+.about-me .inside-about-me img {
+  width: 100%;
+  position: relative;
+}
+
+.info ul {
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+
+.info ul li {
+  display: block;
+  margin: 12px 0px;
+}
+
+.info ul li>span {
+  color: var(--mainColor);
+  margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .inside-about-me {
+    flex-direction: row;
+    overflow: unset;
+  }
+
+  .about-me .inside-about-me>div {
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me .inside-about-me div:first-child {
+    align-items: flex-start;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.skills h6.skill {
+  color: var(--mainColor);
+}
+
+.skills span {
+  padding: 0 5px;
+}

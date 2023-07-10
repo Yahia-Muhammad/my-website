@@ -1,0 +1,191 @@
+/* ===============================
+==========Default Toggle==========
+=============================== */
+.dark {
+  background-color: #1B1B1B !important;
+  color: #FFFFFF !important;
+}
+
+.light {
+  background-color: #ccc !important;
+  color: #000 !important;
+}
+
+/* ===============================
+==========Global Toggle==========
+=============================== */
+
+.dark button {
+  background-color: #fff;
+  color: #000;
+}
+
+.light button {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark button span {
+  background: #fff;
+  color: #000;
+}
+
+.light button span {
+  background: #000;
+  color: #fff;
+}
+
+.dark .social span {
+  color: #fff;
+}
+
+.light .social span {
+  color: #000;
+}
+
+.dark a {
+  color: #fff;
+}
+
+.light a {
+  color: #000;
+
+}
+
+.dark input,
+.dark textarea {
+  background-color: #292929;
+  color: #fff;
+}
+
+.light input,
+.light textarea {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ===============================
+==========Toggle Header And Footer Mode==========
+=============================== */
+
+.dark .cont-header{
+  background-color: #1B1B1B20;
+}
+
+.light .cont-header{
+  background-color: #cccccc20;
+}
+
+.dark header .in-header {
+  background-color: #1B1B1B;
+}
+
+.light header .in-header {
+  background-color: #ccc;
+}
+
+.dark footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.light footer {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ===============================
+==========Toggle bg Main Home==========
+=============================== */
+
+.dark main.home-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/my-photo.webp");
+}
+
+.light main.home-page {
+  background-image: linear-gradient(rgba(204, 204, 204, 0.1), rgba(204, 204, 204, 0.1)), url("../images/my-photo.webp");
+}
+
+/* ===============================
+==========Toggle bg Contact Home==========
+=============================== */
+
+.dark .contact-me {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/abstract-building.webp");
+
+}
+
+.light .contact-me {
+  background-image: linear-gradient(rgba(204, 204, 204, 0.1), rgba(204, 204, 204, 0.1)), url("../images/abstract-building.webp");
+}
+
+.dark .inside-contact p:first-child {
+  color: #9E9E9E;
+}
+
+.light .inside-contact p:first-child {
+  color: #303030;
+}
+
+
+/* ===============================
+==========Toggle ul About Home==========
+=============================== */
+
+.dark .info ul {
+  background-color: #292929;
+}
+
+.light .info ul {
+  background-color: #eeeeee;
+}
+
+
+/* ===============================
+==========Toggle Section Services Home==========
+=============================== */
+
+.dark .my-services div section {
+  background-color: #292929;
+}
+
+.light .my-services div section {
+  background-color: #eeeeee;
+}
+
+/* ===============================
+==========About Page==========
+=============================== */
+
+.dark main.about-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/my-photo.webp");
+}
+
+.light main.about-page {
+  background-image: linear-gradient(rgba(204, 204, 204, 0.1), rgba(204, 204, 204, 0.1)), url("../images/my-photo.webp");
+}
+
+/* ===============================
+==========Project Page==========
+=============================== */
+
+.dark main.projects-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/wallpaper-projects-page.webp");
+}
+
+.light main.projects-page {
+  background-image: linear-gradient(rgba(204, 204, 204, 0.1), rgba(204, 204, 204, 0.1)), url("../images/wallpaper-projects-page.webp");
+  height: 75vh;
+}
+
+/* ===============================
+==========Contact Page==========
+=============================== */
+
+.dark main.contact-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/contact-well-1.webp");
+}
+
+.light main.contact-page {
+  background-image: linear-gradient(rgba(204, 204, 204, 0.1), rgba(204, 204, 204, 0.1)), url("../images/contact-well-1.webp");
+}

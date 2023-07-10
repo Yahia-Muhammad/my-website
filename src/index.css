@@ -1,0 +1,239 @@
+/* ===============================
+==========Global Code==========
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --mainWidth: 85%;
+  --mainMargin: 0 auto;
+  --mainColor: #FF9800;
+}
+
+/* ===========Margin Top And Bottom=========== */
+.mt {
+  margin-top: 1rem;
+}
+
+.mtt {
+  margin-top: 2rem;
+}
+
+.mtt {
+  margin-top: 3rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mbb {
+  margin-bottom: 2rem;
+}
+
+.mbb {
+  margin-bottom: 3rem;
+}
+
+/* ===========Size H1 To H6=========== */
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 3rem;
+  margin: 60px 0;
+  border-bottom: 5px solid var(--mainColor);
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+    margin: 60px 0;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+}
+
+/* ===========Size Paragraph and span inside h4=========== */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h4 span {
+  color: var(--mainColor);
+}
+
+/* ===========Click Button And Link And All Input=========== */
+
+.click {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 35px;
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+button:active {
+  scale: .9;
+}
+
+button.spichial {
+  color: var(--mainColor) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--mainColor);
+  width: 100%;
+}
+
+button.spichial a {
+  color: var(--mainColor);
+}
+
+@media (min-width: 768px) {
+  button.spichial {
+    width: unset;
+  }
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 7px;
+}
+
+/* ===============================
+==========Global All Main Page==========
+=============================== */
+main {
+  background-repeat: no-repeat;
+  background-position: 40% 0;
+  background-size: cover;
+  position: relative;
+}
+
+main>div {
+  position: absolute;
+  left: calc(50% - var(--mainWidth) / 2);
+  bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  main {
+    background-position: center;
+  }
+}
+
+/* ===============================
+==========Code Content Page==========
+=============================== */
+.about-me,
+.my-skills,
+.contact,
+.my-project,
+.comp-projects,
+.my-services {
+  width: var(--mainWidth);
+  margin: var(--mainMargin);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+/* ===============================
+==========Social Icon==========
+=============================== */
+.social {
+  display: inline;
+}
+
+.social span {
+  font-weight: bold;
+  margin: 0 7px;
+  font-size: 1.2rem;
+}
+
+.social span.icon-whatsapp:hover {
+  color: #00E676;
+}
+
+.social span.icon-facebook-square:hover {
+  color: #0F92F3;
+  ;
+}
+
+.social span.icon-instagram:hover {
+  color: #BC2D71;
+}
+
+.social span.icon-twitter-square:hover {
+  color: #3ec9ff;
+}
+
+.social span.icon-linkedin-square:hover {
+  color: #0A66C2;
+}
+
+/* ===============================
+==========Toggle Mode==========
+=============================== */
+
