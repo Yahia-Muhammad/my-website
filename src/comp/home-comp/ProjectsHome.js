@@ -1,17 +1,8 @@
 import Project1 from "../../images/img-porjects-webp/project (1).webp";
-import Project2 from "../../images/img-porjects-webp/project (2).webp";
-import Project3 from "../../images/img-porjects-webp/project (3).webp";
 import Project4 from "../../images/img-porjects-webp/project (4).webp";
-import Project5 from "../../images/img-porjects-webp/project (5).webp";
-import Project6 from "../../images/img-porjects-webp/project (6).webp";
-import Project7 from "../../images/img-porjects-webp/project (7).webp";
-import Project8 from "../../images/img-porjects-webp/project (8).webp";
 import Project9 from "../../images/img-porjects-webp/project (9).webp";
 import Project10 from "../../images/img-porjects-webp/project (10).webp";
 import Project11 from "../../images/img-porjects-webp/project (11).webp";
-import Project12 from "../../images/img-porjects-webp/project (12).webp";
-import Project13 from "../../images/img-porjects-webp/project (13).webp";
-import Project14 from "../../images/img-porjects-webp/project (14).webp";
 import Project15 from "../../images/img-porjects-webp/project (15).webp";
 
 import { Link, NavLink } from "react-router-dom";

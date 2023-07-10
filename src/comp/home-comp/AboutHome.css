@@ -25,23 +25,12 @@
 .about-me .inside-about-me .container-img-home::before {
   content: "";
   position: absolute;
-  left: -20px;
-  top: -23px;
+  left: -15px;
+  top: -15px;
   width: 20%;
   height: 40%;
   border-top: 2px solid var(--mainColor);
   border-left: 2px solid var(--mainColor);
-}
-
-.about-me .inside-about-me .container-img-home::after {
-  content: "";
-  position: absolute;
-  right: -17px;
-  bottom: -15px;
-  width: 70%;
-  height: 80%;
-  background-color: var(--mainColor);
-  z-index: -1;
 }
 
 .about-me .inside-about-me img {
