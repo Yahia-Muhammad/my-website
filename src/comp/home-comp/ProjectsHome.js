@@ -16,8 +16,8 @@ const ProjectsHome = () => {
         <div>
           <img src={Project11} alt="img" />
           <div>
-            <Link to={"#"} target="_blank"><button>Repository</button></Link>
-            <Link to={"#"} target="_blank"><button>Visit</button></Link>
+            <Link to={"https://github.com/Yahia-Muhammad/HangMan-Game"} target="_blank"><button>Repository</button></Link>
+            <Link to={"https://yahia-muhammad.github.io/HangMan-Game/"} target="_blank"><button>Visit</button></Link>
           </div>
         </div>
         <div>
@@ -37,8 +37,8 @@ const ProjectsHome = () => {
         <div>
           <img src={Project1} alt="img" />
           <div>
-            <Link to={"#"} target="_blank"><button>Repository</button></Link>
-            <Link to={"#"} target="_blank"><button>Visit</button></Link>
+            <Link to={"https://github.com/Yahia-Muhammad/Flaw-Design"} target="_blank"><button>Repository</button></Link>
+            <Link to={"https://yahia-muhammad.github.io/Flaw-Design/"} target="_blank"><button>Visit</button></Link>
           </div>
         </div>
         <div>

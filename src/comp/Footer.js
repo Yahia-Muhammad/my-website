@@ -38,7 +38,7 @@ const Footer = () => {
             2023
           </div>
           <div className="social">
-            <Link to={"https://web.whatsapp.com/send/?phone=201015678247"} target="_blank">
+            <Link to={"https://api.whatsapp.com/send/?phone=201015678247"} target="_blank">
               <span className="icon-whatsapp"></span>
             </Link>
             <Link to={"https://www.facebook.com/ya7ia.m/"} target="_blank">
