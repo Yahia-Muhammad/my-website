@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import themeContext from "../config/Theme";
 
 const Footer = () => {
@@ -24,10 +24,17 @@ const Footer = () => {
               justify-content: space-between;
               padding: 12px 0px;
             }
+
+            .inside-footer > div{
+              margin: 7px 0px;
+            }
   
             @media (min-width: 768px){
               .inside-footer {
                 flex-direction: row;
+              }
+              .inside-footer > div{
+                margin: 0px 0px;
               }
             }
           `}</style>

@@ -11,7 +11,7 @@ import { db } from "../firebase/Config";
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, []);
   const { theme } = useContext(themeContext);
 
   const [name, setName] = useState("");
@@ -19,13 +19,14 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
+  const [booleanMessage, setBooleanMessage] = useState();
   const [stateSendMessage, setStateSendMessage] = useState(-100);
 
   return (
     <div className={theme}>
       <Helmet>
         <title>Contact</title>
-        <meta name="description" content=""/>
+        <meta name="description" content="ya7ia website front end developer, yahia muhammad i can help you create your website" />
       </Helmet>
       <Header />
       <main className="contact-page">
@@ -123,18 +124,23 @@ const Contact = () => {
               value="Send Message"
               onClick={async (e) => {
                 e.preventDefault();
-                const id = new Date().getTime();
-                await setDoc(doc(db, "Messages", `${id}`), {
-                  id: id,
-                  name: name,
-                  email: email,
-                  phone: parseInt(phone),
-                  message: message,
-                });
-                setName("");
-                setEmail("");
-                setPhone("");
-                setMessage("");
+                if (message.length > 2) {
+                  const id = new Date().getTime();
+                  await setDoc(doc(db, "Messages", `${id}`), {
+                    id: id,
+                    name: name,
+                    email: email,
+                    phone: parseInt(phone),
+                    message: message,
+                  });
+                  setName("");
+                  setEmail("");
+                  setPhone("");
+                  setMessage("");
+                  setBooleanMessage(true);
+                } else {
+                  setBooleanMessage(false);
+                }
                 setStateSendMessage(-1);
                 setTimeout(() => {
                   setStateSendMessage(-100);
@@ -148,7 +154,8 @@ const Contact = () => {
         style={{ right: `${stateSendMessage}%` }}
         className={`state-send-message`}
       >
-        <p>Message Send Successfully</p>
+        {booleanMessage && <p>Message Send Successfully</p>}
+        {!booleanMessage && <p>Something Wrong Check Your Message</p>}
       </div>
       <Footer />
     </div>

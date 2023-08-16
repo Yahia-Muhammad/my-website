@@ -21,7 +21,7 @@ const Home = () => {
     <div className={theme}>
       <Helmet>
         <title>Yahia</title>
-        <meta name="description" content=""/>
+        <meta name="description" content="ya7ia website front end developer, yahia muhammad i can help you create your website"/>
       </Helmet>
       <Header />
         <MainHome />

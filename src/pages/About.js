@@ -16,7 +16,7 @@ const About = () => {
     <div className={theme}>
       <Helmet>
         <title>About</title>
-        <meta name="description" content=""/>
+        <meta name="description" content="ya7ia website front end developer, yahia muhammad i can help you create your website"/>
       </Helmet>
       <Header />
       <main className="about-page">

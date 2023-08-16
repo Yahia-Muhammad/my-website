@@ -2,6 +2,10 @@ main.home-page {
   height: 100vh;
 }
 
+.yahia{
+  display: block;
+}
+
 button span {
   position: absolute;
   right: -20px;
@@ -11,4 +15,10 @@ button span {
   padding: 10px;
   width: 55px;
   height: 55px;
+}
+
+@media (min-width: 480px) {
+  .yahia{
+    display: inline;
+  }
 }
